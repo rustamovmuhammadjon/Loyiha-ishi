@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-red: #DA4533;
+    --bg-black: #1B1B1B;
+    --bgc-black: #111111;
+    --bg-darkgrey: #5C5C5C;
+    --bg-grey: #8A8A8A;
+    --bgc-white: #F9F9F9;
+    --bg-white: #FFFFFF;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.center {
+    margin: 0 auto;
+}
+.container {
+    background-color: var(--bgc-black);
+}
+.site-nav {
+    background-color: var(--bg-black);
+}
+
+/* birinchi responsiv */
+
+@media (max-width:360px){
+    .container {
+        max-width: 360px;
+        width: 100%;
+    }
+    .content-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .site-nav {
+        width: 100%;
+        height: 70px;
+    }
+    .site-nav__container {
+        justify-content: space-between;
+    }
+    .site-nav__logo {
+        max-width: 129px;
+        width: 100%;
+        height: 29px;
+    }
+    .site-nav__burger {
+        max-width: 46px;
+        width: 100%;
+        height: 46px;
+        border-radius: 5px;
+        border: none;
+        background-color: #272727;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        padding: 5px;
+        z-index: 1000;
+    }
+    .qora-chips__img {
+        display: none;
+    }
+    .burger__icons {
+        background-color: #fff;
+        height: 2px;
+        margin-right: 3px;
+    }
+    .burger__icon1 {
+        width: 23px;
+    }
+    .burger__icon2 {
+        width: 28px;
+    }
+    .burger__icon3 {
+        width: 17px;
+    }
+    #check {
+        display: none;
+    }
+    .site-nav__menu {
+        position: absolute;
+        width: 100%;
+        height: 790px;
+        right: -100%;
+        background-color: #444444;
+        display: none;
+        justify-content: flex-end;
+    }
+    #check:checked~.site-nav__menu{
+        display: flex;
+        right: 0;
+        z-index: 1;
+    }
+    .site-nav__menu-bgc {
+        max-width: 322px;
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-black);
+        display: flex;
+        flex-direction: column;
+    }
+    .menu__contact {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 32px;
+    }
+    .menu__social-media {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 32px;
+    }
+    .menu-manzil {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .menu-manzil__txt {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 33px;
+        color: var(--bg-grey);
+    }
+    .menu-child__txt {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 33px;
+        color: var(--bg-grey);
+    }
+    .birinchi-menu__box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 32px;
+        padding-top: 30px;
+    }
+    .menu__linklar {
+        font-size: 22px;
+        text-decoration: none;
+        font-family: Montserrat;
+        font-weight: 500;
+        line-height: 22px;
+        color: var(--bg-white);
+        margin-top: 20px;
+    }
+    .menu__sxema-txt {
+        text-decoration: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        color: var(--bg-white);
+        margin-top: 20px;
+    }
+    .menu__sxema-txt2 {
+        text-decoration: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        color: var(--bg-white);
+        margin-top: 10px;
+    }
+    .menu__kak-dobratsiya {
+        display: none;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .menu-kak-dobratsiya__txt {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        color: var(--bg-darkgrey);
+    }
+    .menu__image {
+        display: none;
+    }
+    .menu__child-box a {
+        font-family: Montserrat;
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
+        font-size: 22px;
+    }
+    .footer-box3__p-txt {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        color: var(--bg-darkgrey);
+    }
+    .face-insta__box {
+        display: flex;
+    }
+    .footer__linklar {
+        text-decoration: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        color: var(--bg-white);
+        margin-top: 20px;
+    }
+    .insta-txt {
+        margin-left: 62px;
+    }
+}
